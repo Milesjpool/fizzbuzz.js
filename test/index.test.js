@@ -13,10 +13,6 @@ describe("fiz buzz", () => {
         expect(getFizzBuzz(5)).toEqual("buzz");
     });
 
-    it("doesn't returns fizz for non-multiples of 3", () => {
-        expect(getFizzBuzz(2)).not.toEqual("fizz");
-    });
-
     it("returns the value for non-multiples of 3", () => {
         expect(getFizzBuzz(2)).toEqual(2);
     });
