@@ -1,4 +1,4 @@
-const { executeFizzBuzz } = require("../index.js");
+const { executeFizzBuzz } = require("../src/fizzbuzz.js");
 
 describe("executeFizzBuzz", () => {
     it("evaluates resolver over provided range", () => {

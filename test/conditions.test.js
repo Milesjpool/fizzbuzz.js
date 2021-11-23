@@ -1,21 +1,5 @@
-const { fizzy, buzzy, fizzBuzzy } = require("../conditions.js");
-
-const getRandomInt = () => Math.floor(Math.random() * 1000);
-
-describe("fizzBuzzy", () => {
-    const condition = fizzBuzzy;
-    const interval = 3 * 5;
-    it("returns true for multiples of 3 and 5", () => {
-        expect(condition(getRandomInt() * interval)).toBeTruthy();
-    })
-
-    it("returns false for non multiples of 3 or 5", () => {
-        for (let i = 1; i < interval; i++ ) {
-            const input = (getRandomInt() * interval) + i;
-            expect(condition(input)).toBeFalsy();
-        }
-    })
-});
+const { getRandomInt } = require("./utils.js");
+const { fizzy, buzzy } = require("../src/conditions.js");
 
 describe("fizzy", () => {
     const condition = fizzy;

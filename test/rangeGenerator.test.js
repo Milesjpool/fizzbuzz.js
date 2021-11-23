@@ -1,4 +1,4 @@
-const { generateRange } = require("../rangeGenerator.js");
+const { generateRange } = require("../src/rangeGenerator.js");
 
 describe("generateRange", () => {
     it("creates incrementing range of numbers", () => {
